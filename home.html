@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>smkn1banggai</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap5/icon-1/bootstrap.icon.css/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="tugas.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/*** Button ***/
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.btn-outline-warning {
+    color: gold;
+    border: 2px solid gold;
+}
+
+
+/*** Carousel ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .7);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 500 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+h1.span:before {
+    content: '';
+    animation: gerak infinite 5s ease;
+    transform: translateY(-50%);
+}
+
+@keyframes gerak {
+    0% {
+        content: 'SELAMAT DATANG';
+    }
+
+    50% {
+        content: 'SMK BISA SMK HEBAT';
+    }
+
+    75% {
+        content: 'VOKASIH KUAT';
+    }
+
+    100% {
+        content: 'MENGUATKAN INDONESIA';
+    }
+}
+
+th {
+    height: 50px;
+}
+
+.image-zoom {
+        transition: transform 0.2s ease-in;
+      }
+
+      .image-zoom:hover {
+        transform: scale(1.1);
+      }
+
+      .card-body {
+        position: relative;
+      }
+
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 1.8rem;
+        color: gold;
+        text-shadow: 3px 2px 0px orangered;
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+
+      .card-body:hover .image-zoom {
+        filter: blur(2px);
+        transform: scale(1.1);
+      }
+
+      .card-body:hover .text {
+        opacity: 1;
+      }
+
+/*** Content 3 Start ***/
+.features .feature-item {
+    position: relative;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.features .feature-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: rgba(51, 53, 65, 0.24);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.features .feature-item:hover::after {
+    height: 100%;
+}
+
+.features .feature-item .feature-icon {
+    width: 120px; 
+    height: 120px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    transition: 0.7s;
+}
+
+.features .feature-item:hover .feature-icon {
+    border-radius: 100%;
+    background: white !important;
+}
+
+.features .feature-item .feature-icon img {
+    transition: 0.7s;
+}
+
+.features .feature-item:hover .feature-icon img {
+    transform: rotate(360deg);
+    transition: all 0.7s ease;
+}
+
+.features .feature-content h5 {
+    font-weight: bold;
+}
+/*** Content 3 End ***/
+
+</style>
+
+<body>
+    <!-- Topbar -->
+    <div class="container-fluid px-5 d-none d-lg-block" style="background-color: rgb(3, 3, 49);">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="bi bi-map me-2 text-warning"></i>Jln. Bubung Batu No.1, Kec.Banggai, Kab.Banggai Laut, Sulawesi Tengah</small>
+                    <small class="me-3 text-light"><i class="bi bi-phone me-2 text-warning"></i>+628 2259 515 808</small>
+                    <small class="text-light"><i class="bi bi-envelope-open me-2 text-warning"></i>info@smkn1banggai.sch.id</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-twitter"></i></a>
+                    <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-facebook"></i></a>
+                    <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-linkedin"></i></a>
+                    <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-instagram"></i></a>
+                    <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle" href=""><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar Akhir-->
+
+
+    <!-- Navbar -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 px-5 py-lg-0">
+            <a href="home.html" class="navbar-brand p-0">
+                <h1 class="m-0" style="color: gold; font-weight: bold;"><img src="gambar/logo.jpg" width="70px" style="border-radius: 100%;">
+                    SMK NEGERI 1 BANGGAI</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="home.html" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="profil/sejarah.html" class="dropdown-item">Sejarah singkat</a>
+                            <a href="profil/vimi.html" class="dropdown-item">Visi & Misi</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Staff</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="staff/wakepsek.html" class="dropdown-item">Kepsek & Wakasek</a>
+                            <a href="staff/guru.html" class="dropdown-item">Guru Pendidik</a>
+                            <a href="staff/tu.html" class="dropdown-item">Tata Usaha</a>
+                            <a href="staff/bk.html" class="dropdown-item">Guru BK</a>
+                        </div>
+                    </div>
+                    <a href="jurusan.html" class="nav-item nav-link">Jurusan</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="gallery/eskul.html" class="dropdown-item">Ekstrakurikuler</a>
+                            <a href="gallery/fasilitas.html" class="dropdown-item">Fasilitas</a>
+                            <a href="gallery/p5.html" class="dropdown-item">Kegiatan P5</a>
+                            <a href="gallery/photo.html" class="dropdown-item">Photo & Video</a>
+                        </div>
+                    </div>
+                    <a href="ukk.html" class="nav-item nav-link">UKK</a>
+                    <a href="sapras.html" class="nav-item nav-link">Sapras</a>
+                    <a href="kelompok.html" class="nav-item nav-link">Team</a>
+                </div>
+            </div>
+        </nav>
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="gambar/smk-latar.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="span display-1 text-white mb-md-4"></h1>
+                            <a href="#about" class="btn btn-outline-warning py-md-3 px-md-5 me-3 text-center" data-aos="fade-up" data-aos-duration="1500">About us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="gambar/latar1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="span display-1 text-white mb-md-4"></h1>
+                            <a href="#about" class="btn btn-outline-warning py-md-3 px-md-5 me-3 text-center" data-aos="fade-up" data-aos-duration="1500">About us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="gambar/latar2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="span display-1 text-white mb-md-4"></h1>
+                            <a href="#about" class="btn btn-outline-warning py-md-3 px-md-5 me-3 text-center" data-aos="fade-up" data-aos-duration="1500">About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar Akhir-->
+
+    <!-- Content 1 -->
+    <div id="about" class="container-fluid py-5">
+        <div class="container">
+          <div class="konten" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row mt-5">
+              <div class="col-lg-5 text-start">
+                <h1 class="pb-4" style="font-weight: bold;">TENTANG<span style="color: gold;"> SMKN 1 BANGGAI</span></h1>  
+                <p>SMK NEGERI 1 BANGGAI adalah salah satu satuan pendidikan dengan jenjang SMK di Lampa, Kec. Banggai, Kab. Banggai Laut, Sulawesi Tengah. Dalam menjalankan kegiatannya, SMK NEGERI 1 BANGGAI berada di bawah naungan Kementerian Pendidikan dan Kebudayaan. </p>
+                <p>SMK NEGERI 1 BANGGAI beralamat di Jl. Bubung Batu No. 1, Lampa, Kec. Banggai, Kab. Banggai Laut, Sulawesi Tengah, dengan kode pos 94791. SMK NEGERI 1 BANGGAI menyediakan listrik untuk membantu kegiatan belajar mengajar. Sumber listrik yang digunakan oleh SMK NEGERI 1 BANGGAI berasal dari PLN.</p><p> SMK NEGERI 1 BANGGAI menyediakan akses internet yang dapat digunakan untuk mendukung kegiatan belajar mengajar menjadi lebih mudah. Provider yang digunakan SMK NEGERI 1 BANGGAI untuk sambungan internetnya adalah Lainnya (Satelit).Pembelajaran di SMK NEGERI 1 BANGGAI dilakukan pada Pagi-sore. Dalam seminggu, pembelajaran dilakukan selama 5 hari. SMK NEGERI 1 BANGGAI memiliki akreditasi B, berdasarkan sertifikat 032/BAN-SM/SK/2019.</p>
+                <a href="profil/sejarah.html">
+                  <button class="btn btn-success btn-lg" style="width: 50%; border-radius: 30px; font-size: 18px;" type="button">Selengkapnya <i class="bi bi-arrow-right"></i></button>
+                </a>
+              </div>
+              <div class="col-lg-7 mt-4">
+                <video autoplay muted loop style="width: 100%; height: 100%; align-items: end; border-radius: 50% 50% 50% 50%;">
+                  <source src="gambar/vid-back1.mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Akhir Content 1 -->
+
+    <!-- Content 2 -->
+    <div class="container-fluid py-5 mt-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container align-items-center">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-5 text-center mt-5 pt-5">
+              <div class="card" style="border: 2px solid orangered; box-shadow: 3px 2px 3px goldenrod;">
+                <div class="card-body">
+                  <img src="gambar/kepsek.jpg" width="400px" class="img-fluid rounded-3 image-zoom">
+                  <h3 class="text fw-bold">RAHMAWATIH INDAA, S.Ag</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+                <h1 class="pb-4" style="font-weight: bold;">KATA SAMBUTAN<span style="color: gold;"> KEPALA SEKOLAH SMKN 1 BANGGAI</span></h1>  
+              <p>Assalamu'alaikum Wr. Wb.
+                <br><br>
+                Di sekolah ini, kami berkomitmen untuk memberikan pendidikan berkualitas tinggi yang bertumpu pada kecerdasan, integritas, dan kreativitas. Kami memahami bahwa setiap individu memiliki bakat unik dan potensi yang luar biasa, dan sebagai lembaga pendidikan, tugas kami adalah membantu Anda mewujudkan impian dan mencapai kesuksesan.
+                Kami percaya bahwa pendidikan bukan hanya tentang mengisi kepala dengan pengetahuan, tetapi juga tentang membentuk karakter yang kuat dan penuh nilai. Di sekolah ini, kami mendorong sikap saling menghormati, kerjasama, dan sikap peduli terhadap lingkungan sekitar. Kami ingin menciptakan lingkungan yang aman, inklusif, dan mendukung, di mana setiap individu merasa dihargai dan didorong untuk mencapai potensi terbaik mereka.
+                Bersama-sama, mari kita menjadikan setiap hari di sekolah ini sebagai hari yang bermakna dan membangun masa depan yang gemilang.
+                <br><br>
+                Wassalamu'alaikum Wr. Wb.
+              </p> 
+            </div>
+            <div class="col-md-12 text-end">
+                <a class="btn btn-success border-secondary rounded-pill py-1 px-5 mt-4" href="staff/wakepsek.html" style="width: 50%; font-size: 20px;">Info Lainnya <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Akhir content 2 -->
+
+    <!-- Content 3 -->
+      <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container text-center">
+            <h1 style="font-weight: bold; color: gold; font-size: 45px; border-bottom: 1px solid gold; margin-bottom: 40px; padding-bottom: 20px;"><span style="color: black;">Identitas </span>Sekolah</h1>
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <img src="gambar/smk-latar.jpg" width="100%" style="border-radius: 0px 0px 30% 0px; box-shadow: 3px 3px 3px;">
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-bordered border-dark table-hover">
+                    <tr>
+                      <th>NPSN</th>
+                      <th>Status</th>
+                      <th>Bentuk Pendidikan</th>
+                    </tr>
+                    <tr>
+                      <td>40200245</td>
+                      <td>Negeri</td>
+                      <td>SMK</td>
+                    </tr>
+                    <tr>
+                      <th>Status Kepemilikan</th>
+                      <th>No. SK Pendirian Sekolah</th>
+                      <th>Tanggal SK Pendirian</th>
+                    </tr>
+                    <tr>
+                      <td>Pemerintah Daerah</td>
+                      <td>8</td>
+                      <td>2010-09-06</td>
+                    </tr>
+                    <tr>
+                      <th>No. SK Izin Operasional</th>
+                      <th>Tanggal SK Izin Operasional</th>
+                      <th>Akreditasi</th>
+                    </tr>
+                    <tr>
+                      <td>965</td>
+                      <td>2013-12-01</td>
+                      <td>B</td>
+                    </tr>
+                    <tr>
+                      <th>No. SK. Akreditasi</th>
+                      <th>Tanggal SK akreditasi</th>
+                      <th>Nama Sekolah</th>
+                    </tr>
+                    <tr>
+                      <td>032/BAN-SM/SK/2019</td>
+                      <td>15-01-2019</td>
+                      <td>SMK Negeri 1 Banggai Laut</td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Akhir Content 3 -->
+
+    <!-- Content 4 -->
+    <div class="container-fluid features overflow-hidden py-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="display-5 mb-4" style="font-weight: bold;">JURUSAN <span style="color: gold;">SMKN 1 Banggai</span></h2>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                           <img src="gambar/logo-rpl.jpg" class="img-fluid w-100 rounded">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">PPLG & GIM</h5>
+                            <p class="mb-3">Program Keahlian Pengembangan Perangkat Lunak dan Gim (PPLG) adalah salah satu program keahlian yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak</p>
+                            <a class="btn btn-outline-warning rounded-pill" href="jurusan.html">Baca Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <img src="gambar/logo-tkj.png" class="img-fluid w-100 rounded">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">TJKT</h5>
+                            <p class="mb-3">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi adalah merupakan salah satu program keahlian di yang berada di bawah bidang teknologi dan informasi</p>
+                            <a class="btn btn-outline-warning rounded-pill" href="jurusan.html">Baca Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <img src="gambar/Logo-dpib.png" class="img-fluid w-100 rounded">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">DPIB</h5>
+                            <p class="mb-3">Jurusan DPIB atau Desain Permodelan dan Informasi Bangunan adalah suatu ilmu yang mempelajari tentang perencanaan pembangunan, pelaksanaan pembangunan,</p>
+                            <a class="btn btn-outline-warning rounded-pill" href="jurusan.html">Baca Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="feature-item text-center p-4">
+                        <div class="feature-icon p-3 mb-4">
+                            <img src="gambar/logo-tbsm.jpg" class="img-fluid w-100 rounded">
+                        </div>
+                        <div class="feature-content d-flex flex-column">
+                            <h5 class="mb-3">TEKNIK OTOMOTIF</h5>
+                            <p class="mb-3">Jurusan Teknik Otomotif siap membekali siswa dengan cakupan kompetensi lulusan pengetahuan teknik otomotif (menguasai sejarah dan perkembangan teknik otomotif, dasar teknik otomotif,</p>
+                            <a class="btn btn-outline-warning rounded-pill" href="jurusan.html">Baca Selengkapnya<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-success border-secondary rounded-pill py-3 px-5" href="jurusan.html">Info Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Content 4 -->
+
+    <!-- Content 5 -->
+    <div class="container-fluid py-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); border: 2px solid gold;">
+                        <div class="card-body">
+                            <img src="gambar/maulid24.jpg" width="80%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="card" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); border: 2px solid gold;">
+                        <div class="card-body">
+                            <video controls width="100%" height="100%">
+                                <source src="gambar/video2.mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); border: 2px solid gold;">
+                        <div class="card-body">
+                            <img src="gambar/pengajian-jumat.jpg" width="80%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <a class="btn btn-success border-secondary rounded-pill py-2 px-5 mt-4" href="gallery/photo.html">Photo & Video Lainnya <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Content 5 -->
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light footer my-5 mb-0 py-5" data-aos="fade-zoom" data-aos-duration="1500">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6">
+                    <img src="gambar/logo.jpg" style="width: 28%; border-radius: 100%; padding-bottom: 10px;">
+                    <h2 class="text-warning mb-4"><i class="bi bi-house-door text-white me-2"></i>SMKN 1 Banggai Laut</h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jln. Bubung Batu No.1, Desa Lampa,<br>Kec.Banggai, Kab.Banggai Laut, Sulawesi Tengah</p>
+                    <p class="mb-2"><i class="bi bi-clock-fill me-3"></i>Senin-Jumat : 07.00-16.20</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-warning mb-4">Link Cepat</h4>
+                    <a class="btn btn-link" href="profil/sejarah.html">Sejarah singkat</a>
+                    <a class="btn btn-link" href="profil/vimi.html">Visi & Misi</a>
+                    <a class="btn btn-link" href="staff/kepsek.html">Staff</a>
+                    <a class="btn btn-link" href="gallery/photo.html">Gallery</a>
+                    <a class="btn btn-link" href="jurusan.html">Jurusan</a>
+                    <a class="btn btn-link" href="ukk.html">UKK</a>
+                    <a class="btn btn-link" href="sapras.html">Sapras</a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-warning mb-4">Hubungi Kami</h4>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+628 2259 51 5808</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@smkn1bnggai</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="text-warning mb-4">Ikuti Kami</h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-info me-1" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-square btn-outline-danger me-1" href="#"><i class="bi bi-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-success me-0" href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Footer -->
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3 mb-md-0">
+                    &copy; 2024 XII RPL-B. Tugas Kosentrasi Keahlian PPLG. Kelompok 1.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Copyright -->
+
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="btn btn-warning btn-md">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap5/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap5/js/bootstrap.js"></script>
+    <script src="bootstrap5/js/jquery.hislide.js"></script>
+    <script src="bootstrap5/js/jquery.js"></script>
+    <script src="tugas.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

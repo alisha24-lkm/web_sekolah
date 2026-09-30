@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smkn1banggai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap5/icon-1/bootstrap.icon.css/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="tugas.css">
+    <style>
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-hover-rpl {
+  transition: transform 0.5s;
+}
+
+.rotate-hover-rpl:hover {
+  animation: rotate 2s linear forwards;
+  animation-iteration-count: 1;
+}
+
+      .image-zoom {
+        transition: transform 0.2s ease-in;
+      }
+
+      .image-zoom:hover {
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+    
+<!-- Topbar -->
+<div class="container-fluid px-5 d-none d-lg-block" style="background-color: rgb(3, 3, 49);">
+  <div class="row gx-0">
+      <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center" style="height: 45px;">
+              <small class="me-3 text-light"><i class="bi bi-map me-2 text-warning"></i>Jln. Bubung Batu No.1, Kec.Banggai, Kab.Banggai Laut, Sulawesi Tengah</small>
+              <small class="me-3 text-light"><i class="bi bi-phone me-2 text-warning"></i>+628 2259 515 808</small>
+              <small class="text-light"><i class="bi bi-envelope-open me-2 text-warning"></i>info@smkn1banggai.sch.id</small>
+          </div>
+      </div>
+      <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-inline-flex align-items-center" style="height: 45px;">
+              <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-twitter"></i></a>
+              <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-facebook"></i></a>
+              <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-linkedin"></i></a>
+              <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle me-2" href=""><i class="bi bi-instagram"></i></a>
+              <a class="btn btn-sm btn-outline-warning btn-sm-square rounded-circle" href=""><i class="bi bi-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Topbar Akhir-->
+
+<!-- Navbar Start -->
+ <div class="container-fluid position-relative p-0" >
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+      <a href="home.html" class="navbar-brand p-0">
+        <h1 class="m-0" style="color: gold; font-weight: bold;">
+        <img src="gambar/logo.jpg" width="10%" height="10%"  style="border-radius: 100%;">
+        SMK NEGERI 1 BANGGAI</h1>
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="home.html" class="nav-item nav-link">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tentang</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="profil/sejarah.html" class="dropdown-item">Sejarah singkat</a>
+                        <a href="profil/vimi.html" class="dropdown-item">Visi & Misi</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Staff</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="staff/wakepsek.html" class="dropdown-item">Kepsek & Wakasek</a>
+                        <a href="staff/guru.html" class="dropdown-item">Guru Pendidik</a>
+                        <a href="staff/tu.html" class="dropdown-item">Tata Usaha</a>
+                        <a href="staff/bk.html" class="dropdown-item">Guru BK</a>
+                    </div>
+                </div>
+                <a href="jurusan.html" class="nav-item nav-link active">Jurusan</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="gallery/eskul.html" class="dropdown-item">Ekstrakurikuler</a>
+                        <a href="gallery/fasilitas.html" class="dropdown-item">Fasilitas</a>
+                        <a href="gallery/p5.html" class="dropdown-item">Kegiatan P5</a>
+                        <a href="gallery/photo.html" class="dropdown-item">Photo & Video</a>
+                    </div>
+                </div>
+                <a href="ukk.html" class="nav-item nav-link">UKK</a>
+                <a href="sapras.html" class="nav-item nav-link">Sapras</a>
+                <a href="kelompok.html" class="nav-item nav-link">Team</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Jurusan SMKN 1 Banggai</h1>
+                <a href="home.html" class="h6 text-white">Home</a>
+                <i class="bi bi-chevron-right text-white px-2"></i>
+                <a href="jurusan.html" class="h6 text-warning">Jurusan</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar End -->
+
+<!-- Jurusan -->
+
+<div id="jurusan" class="container-fluid tentang" data-aos="fade-up" data-aos-duration="2000">
+  <div class="container">
+      <section class="py-3">  
+            <div class="text-center mt-4">
+              <img src="gambar/logo-rpl.jpg" class="rotate-hover-rpl rounded-circle" style="width: 150px; height: 150px;">
+              <h3 class="mt-3">PENGEMBANGAN PERANGKAT LUNAK & GIM</h3>
+              <div class="row mt-5">
+                <div class="col-lg-6">
+                  <p class="text-end" style="font-size: 18px;">Program Keahlian Pengembangan Perangkat Lunak dan Gim (PPLG) adalah salah satu program keahlian yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas. Selain itu, jurusan PPLG juga berhubungan dengan software komputer seperti pembuatan aplikasi, website, game dan semua yang berhubungan dengan pemrograman. Singkatnya, jurusan PPLG erat kaitannya dengan coding, desain, dan algoritma. Keunggulan dari jurusan PPLG adalah lulusannya lebih siap kerja di berbagai bidang yang membutuhkan kemampuan teknologi informasi dan komunikasi. Lulusan PPLG juga lebih paham seluk beluk komputer dan berbagai teknologi terkini. Selain itu, jurusan PPLG memiliki prospek karir yang jelas dan menjanjikan di era digital.</p>
+                </div>
+                <div class="col-lg-6">
+                  <div id="yt-container" class="ytpp-main">
+                    <a name="ytplayer" class="f">
+                      <div class="fluid-vids" style="width: 100%; position: relative; padding-top: 56.25%;">
+                        <iframe name="ytpl-frame" id="ytpl-frame" type="text/html" rel="tiC3klEWkho" src="https://www.youtube.com/embed/tiC3klEWkho?rel=0&amp;hd=1&amp;version=3&amp;iv_load_policy=3&amp;showinfo=1&amp;controls=1&amp;origin=https://sekolahloka.com" width="100%" height="100%" loading="lazy" style="position: absolute; top: 0px; left: 0px;">
+                        </iframe>
+                      </div>
+                    </a>
+                    </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <img src="gambar/rpl-1.jpg" class="img-fluid rounded image-zoom" style="width: 120%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/rpl-2.jpg" class="img-fluid rounded image-zoom" style="width: 100%; height: 75%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/rpl-3.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 75%;">
+                </div>
+              </div>
+              <img src="gambar/logo-tkj.png" class="rotate-hover-rpl" style="width: 150px; height: 150px; margin-top: 7%;">
+              <h3 class="mt-3">TEKNIK JARINGAN KOMPUTER DAN TELEKOMUNIKASI</h3>
+              <div class="row mt-5">
+                <div class="col-lg-12">
+                  <p style="font-size: 18px;">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi adalah merupakan salah satu program keahlian di yang berada di bawah bidang teknologi dan informasi. Bidang keahlian ini mempelajari tentang cara merakit, menginstal, merawat, dan memperbaiki komputer serta jaringannya. Selain itu, bidang keahlian ini juga mempelajari tentang cara menginstal, mengonfigurasi, mengoptimalkan, dan memelihara jaringan komunikasi data, baik itu jaringan lokal (LAN), jaringan luas (WAN), maupun jaringan internet. Lulusan bidang keahlian TJKT memiliki kompetensi untuk bekerja di berbagai sektor industri yang membutuhkan dukungan teknologi informasi dan komunikasi.</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <img src="gambar/tkj-1.jpg" class="img-fluid rounded image-zoom" style="width: 120%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/tkj-2.jpg" class="img-fluid rounded image-zoom" style="width: 120%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/tkj-3.jpg" class="img-fluid rounded image-zoom" style="width: 120%;">
+                </div>
+              </div>
+              <img src="gambar/Logo-dpib.png" class="rotate-hover-rpl rounded-circle" style="width: 140px; height: 130px; margin-top: 15%;">
+              <h3 class="mt-3">DESAIN PEMBANGUNAN DAN INFORMASI BANGUNAN</h3>
+              <div class="row mt-5">
+                <div class="col-lg-12">
+                  <p style="font-size: 18px;">Jurusan DPIB atau Desain Permodelan dan Informasi Bangunan adalah suatu ilmu yang mempelajari tentang perencanaan pembangunan, pelaksanaan pembangunan, dan perbaikan gedung. Di jurusan ini, kamu akan belajar menggambar rumah/gedung/apartemen, menghitung biaya bangunan, melaksanakan pembangunan, serta memelihara kontruksi bangunan. Tak hanya itu saja, di jurusan ini juga kamu akan mendapatkan kompetensi keahlian aplikasi perangkat lunak, perencanaan interior gedung, estimasi biaya pembangunan, produk kreatif dan kewirausahaan, konstruksi jalan dan jembatan, konstruksi dan utilitas gedung. SMK Jurusan Desain Pemodelan dan Informasi Bangunan memiliki kurikulum yang dirancang khusus untuk mempersiapkan siswa dalam berbagai aspek desain, pemodelan, dan informasi bangunan. Mata pelajaran yang dipelajari dalam jurusan ini mencakup berbagai keterampilan yang diperlukan untuk sukses dalam industri konstruksi dan arsitektur.</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <img src="gambar/produk_dpib1.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 140%">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/produk_dpib2.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 140%">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/produk_dpib3.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 140%">
+                </div>
+              </div>
+              <img src="gambar/logo-tbsm.jpg" class="rotate-hover-rpl rounded-circle" style="width: 150px; height: 150px; margin-top: 25%">
+              <h3 class="mt-3">TEKNIK OTOMOTIF</h3>
+              <div class="row mt-5">
+                <div class="col-lg-6">
+                  <p class="text-end" style="font-size: 18px;">Jurusan Teknik Otomotif siap membekali siswa dengan cakupan kompetensi lulusan pengetahuan teknik otomotif (menguasai sejarah dan perkembangan teknik otomotif, dasar teknik otomotif, dan gambaran umum dunia otomotif), perawatan otomotif (menguasai teknik perawatan mesin, chasis, bodi, dan kelistrikan otomotif), teknologi Otomotif (menguasai teknik pembuatan komponen otomotif), dan enterpreneur (menguasai dasar-dasar manajemen dan pelayanan kepada konsumen serta mampu menjadi enterpreneur dalam bidang otomotif). Dalam pembelajarannya Teknik Otomotif dibagi menjadi perancangan, pengembangan, produksi, dan perawatan otomotif. Jurusan ini membekali kita dengan potensi untuk mengembangakan dan memadukan kegiatan/praktek dengan teori keteknikan. Selain itu, pada jurusan ini juga akan rutin mengadakan penelitian dan pengabdian kepada masyarakat sebagai wujud penerapan IPTEK melalui pelaksaaan pendidikan dan pengajaran serta penelitian bidang pendidikan/ketrampilan teknik bagi kepentingan pembangunan.</p>
+                </div>
+                <div class="col-lg-6">
+                  <video controls width="100%" height="90%">
+                    <source src="gambar/vid-tsm.mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="row mt-5 mb-5 pb-5">
+                <div class="col-md-4">
+                  <img src="gambar/produk_tsm1.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 110%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/produk_tsm4.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 110%;">
+                </div>
+                <div class="col-md-4">
+                  <img src="gambar/produk_tsm2.jpg" class="img-fluid rounded image-zoom" style="width: 120%; height: 110%;">
+                </div>
+              </div>
+            </div>
+      </section>
+  </div>
+</div>
+<!-- Akhir jurusan -->
+
+ <!-- Footer -->
+ <div class="container-fluid bg-dark text-light footer my-5 mb-0 py-5" data-aos="fade-zoom" data-aos-duration="1500">
+  <div class="container">
+      <div class="row g-5">
+          <div class="col-lg-5 col-md-6">
+              <img src="gambar/logo.jpg" style="width: 28%; border-radius: 100%; padding-bottom: 10px;">
+              <h2 class="text-warning mb-4"><i class="bi bi-house-door text-white me-2"></i>SMKN 1 Banggai Laut</h2>
+              <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jln. Bubung Batu No.1, Desa Lampa,<br>Kec.Banggai, Kab.Banggai Laut, Sulawesi Tengah</p>
+              <p class="mb-2"><i class="bi bi-clock-fill me-3"></i>Senin-Jumat : 07.00-16.20</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <h4 class="text-warning mb-4">Link Cepat</h4>
+              <a class="btn btn-link" href="profil/sejarah.html">Sejarah singkat</a>
+              <a class="btn btn-link" href="profil/vimi.html">Visi & Misi</a>
+              <a class="btn btn-link" href="staff/kepsek.html">Staff</a>
+              <a class="btn btn-link" href="gallery/photo.html">Gallery</a>
+              <a class="btn btn-link" href="jurusan.html">Jurusan</a>
+              <a class="btn btn-link" href="ukk.html">UKK</a>
+              <a class="btn btn-link" href="sapras.html">Sapras</a>
+          </div>
+          <div class="col-lg-2 col-md-6">
+              <h4 class="text-warning mb-4">Hubungi Kami</h4>
+              <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+628 2259 51 5808</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@smkn1bnggai</p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+              <h4 class="text-warning mb-4">Ikuti Kami</h4>
+              <div class="d-flex pt-2">
+                  <a class="btn btn-square btn-outline-info me-1" href="#"><i class="bi bi-twitter"></i></a>
+                  <a class="btn btn-square btn-outline-primary me-1" href="#"><i class="bi bi-facebook"></i></a>
+                  <a class="btn btn-square btn-outline-danger me-1" href="#"><i class="bi bi-youtube"></i></a>
+                  <a class="btn btn-square btn-outline-success me-0" href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Akhir Footer -->
+
+
+<!-- Copyright -->
+<div class="container-fluid copyright text-light py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center mb-3 mb-md-0">
+              &copy; 2024 XII RPL-B. Tugas Kosentrasi Keahlian PPLG. Kelompok 1.
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Akhir Copyright -->
+
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="btn btn-warning btn-md">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="bootstrap5/js/bootstrap.bundle.js"></script>
+  <script src="bootstrap5/js/bootstrap.js"></script>
+  <script src="bootstrap5/js/jquery.hislide.js"></script>
+  <script src="bootstrap5/js/jquery.js"></script>
+  <script src="tugas.js"></script>
+  <script>
+      AOS.init();
+  </script>
+
+</body>
+</html>
